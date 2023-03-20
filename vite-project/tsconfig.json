@@ -5,8 +5,10 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
@@ -14,8 +16,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./src"
   },
-  "include": ["src"],
+  "include": ["src", "styled.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
