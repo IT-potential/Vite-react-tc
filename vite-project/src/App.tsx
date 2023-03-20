@@ -3,28 +3,29 @@ import '../src/componets/css/App.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import About from '../src/componets/about';
 import Atmshop from '../src/componets/shop';
-import Errorpage from './componets/404';
+import Errorpage from './componets/page404';
 
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <nav className="menu">
-        <Link to="/">Shop</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/404">404</Link>
-      </nav>
+      <header>
+        <nav className="menu">
+          <Link className="menu__button" to="/"><h3>Shop</h3></Link>
+          <Link className="menu__button" to="/about"><h3>About Us</h3></Link>
+        </nav>
+      </header>
       <Routes>
         <Route path="/" element={<Atmshop />} />
         <Route path="/about" element={<About />} />
-        <Route path="/404" element={<Errorpage />} />
+        <Route path="/*" element={<Errorpage />} />
       </Routes>
 
       <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        count is {count}
       </button>
     </div>
-    
+
   )
 }
 export default App

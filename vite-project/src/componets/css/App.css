@@ -35,8 +35,11 @@
 .read-the-docs {
   color: #888;
 }
-h1, h2 {
+h1 {
   color: rgb(214, 214, 75);
+}
+h2 {
+  color: rgb(85, 85, 223);
 }
 .ATM__grid {
     border: 2px solid yellow;
@@ -65,8 +68,16 @@ h1, h2 {
   .class__description { grid-area: 3 / 2 / 1 / 3; }
   .class__description { grid-area: 3 / 3 / 1 / 4; } 
  
-  nav.flexbox {
+  nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 40px;
+  }
+  .menu__button {
+    width: 20%;
+    border: 1px solid yellow;
+    border-radius: 17px;
   }

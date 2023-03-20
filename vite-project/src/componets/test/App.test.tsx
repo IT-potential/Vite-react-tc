@@ -8,7 +8,7 @@ import Atmshop from '../shop'
 import App from '../../App'
 import '@testing-library/jest-dom/extend-expect';
 import About from "../about";
-import Errorpage from "../404";
+import Errorpage from "../page404";
 
 test('Having a text', () => {
     render(<Atmshop url="/shop" />)
