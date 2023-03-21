@@ -12,6 +12,10 @@ function App() {
       <header>
         <nav className="menu">
           <Link className="menu__button" to="/"><h3>Shop</h3></Link>
+          <div>
+            <input className="search"></input>
+            <img className="search__magnifier" src="src\assets\magnifier.svg" />
+          </div>
           <Link className="menu__button" to="/about"><h3>About Us</h3></Link>
         </nav>
       </header>
