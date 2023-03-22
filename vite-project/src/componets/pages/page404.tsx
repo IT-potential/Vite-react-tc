@@ -1,4 +1,4 @@
-import '../../src/componets/css/page404.css';
+import '../css/page404.css';
 
 function Errorpage() {
 return (

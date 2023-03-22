@@ -1,34 +1,30 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
     "jest": true,
     "node": true
+  },
+  "root": true,
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "root": true,
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "plugin:react-hooks/recommended",
-        "plugin:prettier/recommended"
-    ],
-    "overrides": [
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-          },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint", "react", "prettier", "react-hooks"
-    ],
-    "rules": {
+    "ecmaVersion": "latest",
+		"sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint", "react", "prettier", "react-hooks"
+  ],
+  "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "comma-dangle": ["error", "only-multiline"],
@@ -44,12 +40,14 @@
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-var-reqiures": "off",
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
-    },
-    "settings": {
-        "react": {
-          "pragma": "React",
-          "version": "detect"
-        }
-      }
+    "react/react-in-jsx-scope": "off",
+    "quotes": ["error", "double"],
+    "jsx-quotes": ["error", "prefer-double"]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
 }

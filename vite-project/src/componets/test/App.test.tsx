@@ -4,11 +4,11 @@ import userEvent from '@testing-library/user-event'
 import { act } from 'react-dom/test-utils';
 import { MemoryRouter } from "react-router-dom";
 import '@testing-library/jest-dom'
-import Atmshop from '../shop'
+import Atmshop from '../pages/shop'
 import App from '../../App'
 import '@testing-library/jest-dom/extend-expect';
-import About from "../about";
-import Errorpage from "../page404";
+import About from "../pages/about";
+import Errorpage from "../pages/page404";
 
 test('Having a text', () => {
     render(<Atmshop url="/shop" />)

@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/App.tsx</title>
+    <title>Code coverage report for src/componets/pages/shop.tsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> App.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/componets/pages</a> shop.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -97,22 +97,10 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -128,7 +116,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -139,45 +126,46 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState } from 'react';
-import '../src/componets/css/App.css';
-import { Routes, Route, Link } from 'react-router-dom';
-import About from './componets/pages/about';
-import Atmshop from './componets/pages/shop';
-import Errorpage from './componets/pages/page404';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { SearchBar } from '../../searchBar';
+&nbsp;
+function Atmshop() {
+  return (
+    &lt;div&gt;
+      &lt;h1 className="shop__name"&gt;Bitcoin ATM shop&lt;/h1&gt;
+      &lt;SearchBar /&gt;
+      &lt;div className='conteiner'&gt;
+        &lt;div className="ATM__grid"&gt;
+          &lt;div&gt;
+            &lt;h2 className="class__description"&gt;Genesis-1&lt;img src="../src/assets/genesis1.webp" className="ATM__first" alt="first ATM" /&gt;
+            &lt;/h2&gt;&lt;p&gt;The latest model from Lamassu, designed for simplicity and elegance with its steel construction.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div &gt;
+            &lt;h2 className="class__description"&gt;Tejo&lt;img src="../src/assets/2sintra-front.png" className="ATM__second" alt="first ATM" /&gt;
+            &lt;/h2&gt;&lt;p&gt;The latest model from Lamassu, designed for simplicity and elegance with its steel construction.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;h2 className="class__description"&gt;Satoshi-1&lt;img src="../src/assets/satoshi1.webp" className="ATM__third" alt="first ATM" /&gt;
+            &lt;/h2&gt;&lt;p&gt;The latest model from Lamassu, designed for simplicity and elegance with its steel construction.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+&nbsp;
+      &lt;div className="card"&gt;
+      &lt;/div&gt;
+&nbsp;
+    &lt;/div
 &nbsp;
 &nbsp;
-function <span class="fstat-no" title="function not covered" >App(</span>) {
-  const [count, setCount] = <span class="cstat-no" title="statement not covered" >useState(0)</span>
-  const [isOpen, setOpen] = <span class="cstat-no" title="statement not covered" >useState(true)</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;div className="App"&gt;
-      {/* &lt;button onClick={() =&gt; setOpen(!isOpen)}&gt;Open&lt;/button&gt; */}
-      &lt;header&gt;
-        &lt;nav className="menu"&gt;
-          &lt;Link className="menu__button" to="/"&gt;&lt;h3&gt;Shop&lt;/h3&gt;&lt;/Link&gt;
-          &lt;Link className="menu__button" to="/about"&gt;&lt;h3&gt;About Us&lt;/h3&gt;&lt;/Link&gt;
-        &lt;/nav&gt;
-      &lt;/header&gt;
-      &lt;Routes&gt;
-        &lt;Route path="/" element={&lt;Atmshop /&gt;} /&gt;
-        &lt;Route path="/about" element={&lt;About /&gt;} /&gt;
-        &lt;Route path="/*" element={&lt;Errorpage /&gt;} /&gt;
-      &lt;/Routes&gt;
-&nbsp;
-&nbsp;
-      &lt;button onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >setCount(<span class="fstat-no" title="function not covered" >(c</span>ount) =&gt; <span class="cstat-no" title="statement not covered" >count + 1)</span>}</span>&gt;
-        count is {count}
-      &lt;/button&gt;
-    &lt;/div&gt;
-&nbsp;
-  )
+    &gt;
+  );
 }
-export default App
 &nbsp;
-&nbsp;
-&nbsp;
-&nbsp;</pre></td></tr></table></pre>
+export default Atmshop</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
@@ -186,14 +174,14 @@ export default App
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
                 at 2023-03-22T16:25:50.025Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
     </body>
 </html>
     
