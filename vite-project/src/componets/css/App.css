@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.card {
+  padding: 2em;
+}
+.read-the-docs {
+  color: #888;
+}
+h1 {
+  color: rgb(214, 214, 75);
+  margin-bottom: 0;
+}
+h2 {
+  color: rgb(85, 85, 223);
+}
+.ATM__grid {
+    margin-top: 20px;
+    border: 2px solid yellow;
+    border-radius: 17px;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    grid-column-gap: 45px;
+ }
+.ATM__grid img {
+  height: 480px;
+  width: auto;
+  border: 3px solid yellow;
+  border-radius: 17px;
+  margin: 40px;
+}
+
+  .ATM__first { grid-area: 2 / 1 / 1 / 2; }
+  .ATM__second { grid-area: 2 / 2 / 1 / 3; }
+  .ATM__third { grid-area: 2 / 3 / 1 / 4; }
+  
+  .card__name1 { grid-area: 1 / 1 / 2 / 2; }
+  .card__name2 { grid-area: 1 / 2 / 2 / 3; }
+  .card__name3 { grid-area: 1 / 3 / 2 / 4; }
+  
+  .class__description { grid-area: 3 / 1 / 1 / 2; }
+  .class__description { grid-area: 3 / 2 / 1 / 3; }
+  .class__description { grid-area: 3 / 3 / 1 / 4; } 
+ 
+  nav {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    column-gap: 40px;
+  }
+  .menu__button {
+    width: 20%;
+    border: 1px solid yellow;
+    border-radius: 17px;
+  }
+  .search {
+    height: 27px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+  }
+  .search__magnifier {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
